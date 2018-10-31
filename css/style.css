@@ -31,8 +31,8 @@ html {
     color: #ffffff;
     padding: 15px;
 }body {margin: 0;}
-
-ul.sidenav {
+/*trying different sytle maybe tp see the changesssssssssssss*/
+/*ul.sidenav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -58,6 +58,39 @@ ul.sidenav li a.active {
 ul.sidenav li a:hover:not(.active) {
     background-color: #555;
     color: white;
+}*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }
 #shady{
 
@@ -71,10 +104,13 @@ div.content {
 }
 
 @media screen and (max-width: 900px) {
-    ul.sidenav {
+    /*ul.sidenav {
         width: 100%;
         height: auto;
-        position: relative;
+        position: relative;*/
+        ul.topnav li.right, 
+    ul.topnav li {float: none;}
+
     }
     ul.sidenav li a {
         float: left;
