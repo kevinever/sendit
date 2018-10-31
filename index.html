@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}body {margin: 0;}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+#shady{
+
+color: black;
+box-shadow: 10px 10px;
+}
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+#aside{
+text-align:right;
+width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+input[type=text] {
+    width: auto;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 10px;
+}
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <h1 style="text-align:center">Send it parcel management system</h1>
+</div>
+<ul class="sidenav">
+  <li><a class="active" href="#">Home</a></li>
+  <li><a href="hh.html" target="_top">News</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  
+</ul>
+
+<div class="content">
+  <h2>TRACK YOUR DELIVERY</h2><div id="shady">
+  <form method="GET" action="" style="">
+  <fieldset><legend>Delivery Status</legend>
+<table border=0 width=50% align=left style="border:0px solid; padding">
+<tr>
+<td>No.Invoice </td><td>:&nbsp;&nbsp;&nbsp;</td><td><!--<input type="text" name="search" size="33"  value=""style="box-shadow:10px 10px green;" required>--> <input type="text" name="search" placeholder="Track..">  <input type="submit" name="submit2" value="Check"></td>
+</tr>
+<tr>
+<td></td><td></td><td>Ex: 141</td>
+</tr>
+<tr>
+<td></td><td></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+  </fieldset>
+<input type="hidden" name="pilih" value="" />
+<input type="hidden" name="modul" value="yes" />
+<input type="hidden" name="action" value="cari" />
+
+</form></div><br><br><br><br><br>
+  <div id="aside">
+
+<table border="0" align="center" width="89%">
+          <tbody><tr bgcolor="#EFF7FC">
+            <td class="aalpha" bgcolor="#008C00" height="19"><b style="color:#FFFFFF;text-align:center;">who can use <strong>send it</strong></b></td>
+          </tr>
+          <tr bgcolor="#EFF7FC">
+            <td class="aalpha" height="19"><img src="home_files/arrow_right.gif" height="9" width="9"> Courier Company </td>
+          </tr>
+          <tr>
+            <td class="aalpha"><img src="home_files/arrow_right.gif" height="9" width="9"> Cargo Company </td>
+          </tr>
+          <tr bgcolor="#EFF7FC">
+            <td class="aalpha"><img src="home_files/arrow_right.gif" height="9" width="9"> Any Logistics </td>
+          </tr>
+          <tr>
+            <td class="aalpha"><img src="home_files/arrow_right.gif" height="9" width="9"> Shipping Company </td>
+          </tr>
+          <tr bgcolor="#EFF7FC">
+            <td class="aalpha"><img src="home_files/arrow_right.gif" height="9" width="9"> Freight Company </td>
+          </tr>
+        </tbody></table>
+
+</div>
+
+
+  <article>
+  <p>
+    Send it is a <cite>courier service</cite> that helps users deliver parcels to different destinations. SendIT  provides courier quotes based on weight categories.  
+  </p>
+  <aside id="shady">
+   <fieldset><legend ><strong>Check The Shipping Quote</strong></legend> 
+      <form method="POST" action=""  name="sendit">
+<table width=100%>
+
+<tr>
+<td>Origins</td>
+<td>:</td>
+<td> <input id="origins" type="text" placeholder="Origins" class="validate" name="nama"></td>
+</tr>
+
+<tr>
+<td>Destinations</td>
+<td>:</td>
+<td> <input name="tujuan" id="destinations" placeholder="Destinations" type="text" class="validate"></td>
+</tr>
+
+
+
+
+<tr>
+<td>Weight (Kg) Ex: 0.2, 2, 20</td>
+<td>:</td>
+<td><input type="text" name="berat"></td>
+</tr>
+
+   
+<tr>
+<td>Long (Cm)</td>
+<td>:</td>
+<td><input type="text" name="panjang"></td>
+</tr>
+
+<tr>
+<td>Wide (Cm)</td>
+<td>:</td>
+<td><input type="text" name="lebar"></td>
+</tr>
+
+
+<tr>
+<td>High (Cm)</td>
+<td>:</td>
+<td><input type="text" name="tinggi"></td>
+</tr>
+
+<tr>
+<td>Delivery options</td>
+<td>:</td>
+<td><select name="tipe">
+<option value="Sea or Land"> Sea or Land</option>
+<option value="Air"> Air</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Packing</td>
+<td>:</td>
+<td><select name="pack" >
+<option value="No"> No</option>
+<option value="Yes"> Yes</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Option Shipping</td>
+<td>:</td>
+<td><select name="cepat" onchange="calculateDistances();">
+<option value="">-- Option Shipping --</option>
+<option value="2">Over Night</option><option value="3">Over Land</option><option value="4">Detain</option><option value="5">Detain</option><option value="6">dslfj</option><option value="7">Phone</option><option value="8">Entrega Basica</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Distance (Km)</td>
+<td>:</td>
+<td> <input id="distance"  type="text" name="jarak">  
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><input type="submit" name="submit" value="Check"></td>
+</tr>
+
+</table><input id="billing" type="hidden" placeholder="Total Tarif">
+  <div id="map"></div>
+</form>
+  </fieldset>  
+  </aside>
+  
+</article>
+</div>
+<footer>
+<address>
+Author:Nyayiha Kevin
+Email:nyayihakevin@gmail.com
+Tel:0786746170
+</address>
+</footer>
+</body>
+</html>
