@@ -18,8 +18,8 @@
   <li class="dropdown" style="float:right">
     <a href="javascript:void(0)" class="dropbtn">Members Area</a>
     <div class="dropdown-content">
-      <a href="#">Sign up</a>
-      <a href="#">Login</a>
+      <a href="signup.html">Sign up</a>
+      <a href="login.html">Login</a>
       <a href="admin.html" style ="color:#FFFFFF">Admin</a>    </div>
   </li>
 
@@ -32,7 +32,7 @@
   <fieldset><legend>Delivery Status</legend>
 <table border=0 width=50% align=left style="border:0px solid; padding">
 <tr>
-<td>No.Invoice </td><td>:&nbsp;&nbsp;&nbsp;</td><td><!--<input type="text" name="search" size="33"  value=""style="box-shadow:10px 10px green;" required>--> <input type="text" name="search" placeholder="Track..">  <input type="submit" name="submit2" value="Check"></td>
+<td>No.Invoice </td><td>:&nbsp;&nbsp;&nbsp;</td><td><!--<input type="text" name="search" size="33"  value=""style="box-shadow:10px 10px green;" required>--> <input type="text" name="search" placeholder="Track.." required>  <input type="submit" name="submit2" value="Check"></td>
 </tr>
 <tr>
 <td></td><td></td><td>Ex: 141</td>
@@ -161,7 +161,7 @@
 <tr>
 <td></td>
 <td></td>
-<td><input type="submit" name="submit" onClick="MM_validateForm('name','','R','destinations','','R','weight','','R','long','','R','wide','','R','high','','R','opt','','R','pack','','ship','dista','','R','submit','R');return document.MM_returnValue" value="Check"></td>
+<td><input type="submit" name="submit" onClick="MM_validateForm('name','','R','destinations','','R','weight','','R','long','','R','wide','','R','high','','R','opt','','R','','','ship','dista','','R','submit','R');return document.MM_returnValue" value="Check"></td>
 </tr>
 
 </table><input id="billing" type="hidden" placeholder="Total Tarif">
