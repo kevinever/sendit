@@ -22,6 +22,99 @@
       <a href="#">Link 3</a>    </div>
   </li>
 </ul>
+<aside id="shady">
+   <fieldset><legend ><strong>Form Order Bucket</strong></legend> 
+      <form method="POST" action=""  name="sendit">
+<table width=100%>
+
+<tr>
+<td>Origins</td>
+<td>:</td>
+<td> <input id="origins" type="text" placeholder="Origins" class="validate" name="nama"></td>
+</tr>
+
+<tr>
+<td>Destinations</td>
+<td>:</td>
+<td> <input name="tujuan" id="destinations" placeholder="Destinations" type="text" class="validate"></td>
+</tr>
+
+
+
+
+<tr>
+<td>Weight (Kg) Ex: 0.2, 2, 20</td>
+<td>:</td>
+<td><input type="text" name="berat"></td>
+</tr>
+
+   
+<tr>
+<td>Long (Cm)</td>
+<td>:</td>
+<td><input type="text" name="panjang"></td>
+</tr>
+
+<tr>
+<td>Wide (Cm)</td>
+<td>:</td>
+<td><input type="text" name="lebar"></td>
+</tr>
+
+
+<tr>
+<td>High (Cm)</td>
+<td>:</td>
+<td><input type="text" name="tinggi"></td>
+</tr>
+
+<tr>
+<td>Delivery options</td>
+<td>:</td>
+<td><select name="tipe">
+<option value="Sea or Land"> Sea or Land</option>
+<option value="Air"> Air</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Packing</td>
+<td>:</td>
+<td><select name="pack" >
+<option value="No"> No</option>
+<option value="Yes"> Yes</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Option Shipping</td>
+<td>:</td>
+<td><select name="cepat" onchange="calculateDistances();">
+<option value="">-- Option Shipping --</option>
+<option value="2">Over Night</option><option value="3">Over Land</option><option value="4">Detain</option><option value="5">Detain</option><option value="6">dslfj</option><option value="7">Phone</option><option value="8">Entrega Basica</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Distance (Km)</td>
+<td>:</td>
+<td> <input id="distance"  type="text" name="jarak">  
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><input type="submit" name="submit" value="Check"></td>
+</tr>
+
+</table><input id="billing" type="hidden" placeholder="Total Tarif">
+  <div id="map"></div>
+</form>
+  </fieldset>  
+  </aside>
+
+
 <div class="content">
   <h3>Resize the browser window to see the effect.</h3>
 </div>
