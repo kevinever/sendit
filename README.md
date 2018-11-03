@@ -1,6 +1,8 @@
 # sendit
 a courier service that helps users deliver parcels to different destinations. SendIT provides courier quotes based on weight categories.
 
-changes has to be made by us
+parcel Courier Management System
+parcel Shipment management system prototype for .
 
-one change
+Purpose
+To enable a private delivery service to collect and deliver parcels. The system lets a manager/admin use a Management Dashboard to view, track, assign, and manage a list of all shipments.
